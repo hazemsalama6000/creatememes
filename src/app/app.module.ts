@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Generator } from './generator/generator.component';
 import { Navbar } from './navbar/navbar.component';
-
+import {ColorChromeModule} from 'ngx-color/chrome'
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,8 +14,9 @@ import { Navbar } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    ColorChromeModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,1 +1,64 @@
-generator
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <form action="">
+
+            <div class="form-group">
+              <label>Select Image</label>
+              <input type="file" (change)="preview($event)" class="form-control" name="imagename" accept="image/*">
+            </div>
+
+            <div class="form-group">
+              <label for="">top text</label>
+              <input type="text" class="form-control" name="toptext" id="">
+            </div>
+
+            <div class="form-group">
+              <label for="">bottom text</label>
+              <input type="text" class="form-control" name="bottomtext" id="">
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">bottom text</label>
+                  <color-chrome></color-chrome>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">bottom text</label>
+                  <color-chrome></color-chrome>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+              <button class="btn btn-danger">
+                download
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+      <canvas #memCanvas id="canvas" style="background-color:#f9f9fd;" height="800" width="700"></canvas>
+
+    </div>
+  </div>
+
+
+
+</div>
