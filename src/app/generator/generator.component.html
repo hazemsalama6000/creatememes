@@ -13,27 +13,27 @@
 
             <div class="form-group">
               <label for="">top text</label>
-              <input type="text" class="form-control" name="toptext" id="">
+              <input type="text" [(ngModel)]="topText" (input)="drawTopText()" class="form-control" name="toptext" id="">
             </div>
 
             <div class="form-group">
               <label for="">bottom text</label>
-              <input type="text" class="form-control" name="bottomtext" id="">
+              <input (input)="drawTopText()" [(ngModel)]="bottomText" type="text" class="form-control" name="bottomtext" id="">
             </div>
 
 
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="">bottom text</label>
-                  <color-chrome></color-chrome>
+                  <label for=""> text</label>
+                  <color-chrome (onChangeComplete)="handleChangeText($event)"></color-chrome>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="">bottom text</label>
-                  <color-chrome></color-chrome>
+                  <label for="">bg color</label>
+                  <color-chrome  (onChangeComplete)="handlebgColor($event)"></color-chrome>
                 </div>
               </div>
 
@@ -41,7 +41,7 @@
             </div>
 
             <div class="row">
-              <button class="btn btn-danger">
+              <button class="btn btn-danger" (click)="downloadImage()">
                 download
               </button>
             </div>

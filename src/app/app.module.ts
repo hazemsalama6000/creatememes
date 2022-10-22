@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Generator } from './generator/generator.component';
 import { Navbar } from './navbar/navbar.component';
 import {ColorChromeModule} from 'ngx-color/chrome'
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import {ColorChromeModule} from 'ngx-color/chrome'
     BrowserModule,
     AppRoutingModule,
     ColorChromeModule,
+    FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
